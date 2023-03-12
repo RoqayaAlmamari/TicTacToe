@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class MainApp {
 
     public static void main(String[] args) {
+        // Create a Scanner object for reading user input from the console
         Scanner scanner = new Scanner(System.in);
 
         // Initialize the game
@@ -34,7 +35,6 @@ public class MainApp {
         Player currentPlayer = player1;
         while (!board.isFull() && !board.hasWon(player1.getSymbol()) && !board.hasWon(player2.getSymbol())) {
             // Display the board
-           // System.out.println(board);
             board.display();
 
             // Prompt the current player to make a move
@@ -50,7 +50,6 @@ public class MainApp {
         }
 
         // Display the final state of the board
-        //System.out.println(board);
         board.display();
 
         // Display the result of the game
