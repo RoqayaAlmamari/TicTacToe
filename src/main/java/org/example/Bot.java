@@ -2,6 +2,8 @@ package org.example;
 
 class Bot extends Player {
 
+    //constructor
+
     public Bot(Symbol symbol) {
         super("Bot", symbol);
     }
